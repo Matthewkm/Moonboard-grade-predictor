@@ -18,11 +18,15 @@ This dataset was downloaded via https://github.com/spookykat/MoonBoard as of 30/
   - We found performing regression with a Mean Squared error performed best.
 
 ## Results
+| Metric       | CNN (ours) | Neural Network (ours) | RNN [[Duh & Chang]](https://arxiv.org/pdf/2102.01788.pdf) |
+| ------------ | ---------- | --------------------- | --------------------------------------------------------- |
+| Accuracy     |   59.4%    |   **71.4%**           |        46.7%                                             | 
+| Accuracy +/-1|   71.4$    |   **95.9%**           |        84.7%
+
 - We provide pretrained weights for our custom Neural and Convolutional Neural Networks for grade prediction.
   - These can be downloaded from my google drive as they are too big for github: [NN weights](https://drive.google.com/file/d/1HFXFQCYpmgARNR_Hz6o-I2MM4x5toEWF/view?usp=sharing), [CNN weights](https://drive.google.com/file/d/1Latig7ldjil_XG9PhQW6an2mVFuy-6gd/view?usp=sharing) or you can train your own models utilising the training code.
 - We provide a Jupyter notebook `Testing.ipynb` for analysing results output by our model, this will require pytorch to reproduce on your machine.
 - The Neural Network performs significantly better than the CNN (71.4% vs 59.4% closest grade prediction and 95.9% vs 80.1% +/- 1 grade), potenitally due to increased size, but also max pooling probably hurts the CNNs ability to model exact hold relations.
-- The analysis will be improved in the future.
 
 ## Retraining the models
 If you wish to train your own models run ```trainer.py```. for convenience we include two arguments ```--model_type``` which can be set to 'NN' or 'CNN' and ```benchmark``` which can be set to True for training on non benchmark problems rather than a random split.
