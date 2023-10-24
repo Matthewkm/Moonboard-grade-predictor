@@ -21,7 +21,7 @@ This dataset was downloaded via https://github.com/spookykat/MoonBoard as of 30/
 | Metric       | CNN (ours) | Neural Network (ours) | RNN [[Duh & Chang]](https://arxiv.org/pdf/2102.01788.pdf) |
 | ------------ | ---------- | --------------------- | --------------------------------------------------------- |
 | Accuracy     |   59.4%    |   **71.4%**           |        46.7%                                             | 
-| Accuracy +/-1|   71.4$    |   **95.9%**           |        84.7%
+| Accuracy +/-1|   71.4%    |   **95.9%**           |        84.7%
 
 - We provide pretrained weights for our custom Neural and Convolutional Neural Networks for grade prediction.
   - These can be downloaded from my google drive as they are too big for github: [NN weights](https://drive.google.com/file/d/1HFXFQCYpmgARNR_Hz6o-I2MM4x5toEWF/view?usp=sharing), [CNN weights](https://drive.google.com/file/d/1Latig7ldjil_XG9PhQW6an2mVFuy-6gd/view?usp=sharing) or you can train your own models utilising the training code.
