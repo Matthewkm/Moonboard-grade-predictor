@@ -1,4 +1,4 @@
-# Moonboard grade predictor
+# Moonboard Grade Prediction with Deep Learning
 
 This is a work in progress minimal implementation of a moonboard grade predictor model utilising a custom Neural and Convolutional Neural architecture.
 
